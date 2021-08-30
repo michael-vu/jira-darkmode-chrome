@@ -1,0 +1,23 @@
+{
+  "name": "Darkmode",
+  "description" : "Attempt to add a dark mode to bad website!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "ComicSans.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://grabcad.atlassian.net/*",
+        "https://drive.google.com/*"
+      ],
+      "js": ["darkmode.js"],
+      "css": ["darkmode.css"]
+    }
+  ]
+}

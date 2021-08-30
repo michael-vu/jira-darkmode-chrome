@@ -1,0 +1,11 @@
+span[role='img'] {
+    filter: invert(1);
+}
+
+img {
+    filter: invert(1);
+}
+
+body {
+    filter: invert(1);
+}
